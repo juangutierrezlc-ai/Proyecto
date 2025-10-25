@@ -7,3 +7,5 @@ Proyecto/
 ├── mlops_pipeline/
 
 │   └── src/
+
+│       ├── Cargar_datos.ipynb 

@@ -3,4 +3,4 @@ Este proyecto correspo de al proyecto final de la materia de ML, el cual tiene c
 
 # 🧾Estructura del proyecto
 Proyecto/
-├── mlops_pipeline/
+#├── mlops_pipeline/

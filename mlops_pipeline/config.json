@@ -1,0 +1,8 @@
+{
+  "project_code": "mlops001",
+  "project_name": "mlops_pipeline",
+  "user_name": "JuanGutierrezLC",
+  "bucket": "s3://mlops-bucket",         
+  "database": "mlops_db",               
+  "proyecto": "Clasificación de datos para modelo supervisado"
+}

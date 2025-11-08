@@ -7,7 +7,7 @@
   "proyecto": "Clasificación de datos para modelo supervisado",
   "data": {
     "path": "Base_de_datos.csv",
-    "target_column":"label"
+    "target_column":"Selling_Price"
 
   }
 }

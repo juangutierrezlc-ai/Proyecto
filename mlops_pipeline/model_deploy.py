@@ -2,11 +2,12 @@ from fastapi import FastAPI
 from pydantic import BaseModel
 import pandas as pd
 import joblib
+import uvicorn
 
 app = FastAPI(title="API de Predicción de Precio de Vehículos")
 
 # Cargar modelo
-model = joblib.load("models/best_model.pkl")
+model = joblib.load("scr/models/best_model.pkl")
 
 # Definir estructura de entrada
 class Vehicle(BaseModel):
@@ -36,3 +37,5 @@ def predict_batch(data: list[Vehicle]):
     predictions = model.predict(df_encoded)
     return {"predictions": predictions.tolist()}
 
+if __name__ == "__main__":
+    uvicorn.run("model_deploy:app", host="0.0.0.0", port=8000, reload=True)
